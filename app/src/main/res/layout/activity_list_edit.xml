@@ -7,7 +7,7 @@
     tools:context=".List_edit">
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/subtractQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="?attr/editTextBackground"
@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="278dp" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/subtractQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="?attr/editTextBackground"
@@ -87,41 +87,49 @@
         app:layout_constraintVertical_bias="0.09" />
 
     <ImageButton
-        android:id="@+id/add"
+        android:id="@+id/addQuantity "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/subtract"
+        app:layout_constraintEnd_toStartOf="@+id/subtractQuantity"
         app:srcCompat="@android:drawable/ic_menu_add"
         tools:layout_editor_absoluteY="143dp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/addQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/subtractQuantity"
         app:srcCompat="@android:drawable/ic_menu_add"
         tools:layout_editor_absoluteY="209dp" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/addQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintEnd_toStartOf="@+id/subtractQuantity"
         app:srcCompat="@android:drawable/ic_menu_add"
         tools:layout_editor_absoluteY="278dp" />
 
     <ImageButton
-        android:id="@+id/subtract"
+        android:id="@+id/subtractQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="?attr/editTextBackground"
         tools:layout_editor_absoluteX="304dp"
         tools:layout_editor_absoluteY="142dp" />
+
+    <ImageButton
+        android:id="@+id/goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </android.support.constraint.ConstraintLayout>

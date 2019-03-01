@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteY="150dp" />
 
     <EditText
-        android:id="@+id/item_name"
+        android:id="@+id/itemName"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -28,7 +28,7 @@
         tools:layout_editor_absoluteY="94dp" />
 
     <Button
-        android:id="@+id/add_item"
+        android:id="@+id/plusItem"
         android:layout_width="40dp"
         android:layout_height="37dp"
         android:text="+"

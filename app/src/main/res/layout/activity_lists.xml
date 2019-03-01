@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.305" />
 
     <Button
-        android:id="@+id/edit_list"
+        android:id="@+id/editList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -41,17 +41,17 @@
         app:layout_constraintVertical_bias="0.308" />
 
     <Button
-        android:id="@+id/delete_list"
+        android:id="@+id/deleteList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
         android:layout_marginLeft="200dp"
         android:text="Delete"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edit_list"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editList"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/go_back"
+        android:id="@+id/goBack"
         android:layout_width="45dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
