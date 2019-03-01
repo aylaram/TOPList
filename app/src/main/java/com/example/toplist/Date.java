@@ -50,7 +50,9 @@ public class Date {
         return a;
     }
 
-/*    public String AskDate(String Cad) throws NumberFormatException, IOException {
+/*      If we want someday to ask for the date or expiration date
+
+        public String AskDate(String Cad) throws NumberFormatException, IOException {
         boolean bisiesto=false, mismoA=false, mismoM, mismoD=false,Sig;
 
         //Año
