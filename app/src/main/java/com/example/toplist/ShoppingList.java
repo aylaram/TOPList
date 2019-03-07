@@ -7,6 +7,12 @@ public class ShoppingList {
     private Date dat;
     private List<Items> items;
 
+    public ShoppingList(String name, Date dat, List<Items> items) {
+        this.name = name;
+        this.dat = dat;
+        this.items = items;
+    }
+
     public String getName() {
         return name;
     }
@@ -28,12 +34,6 @@ public class ShoppingList {
     }
 
     public void setItems(List<Items> items) {
-        this.items = items;
-    }
-
-    public ShoppingList(String name, Date dat, List<Items> items) {
-        this.name = name;
-        this.dat = dat;
         this.items = items;
     }
 }
