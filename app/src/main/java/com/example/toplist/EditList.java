@@ -3,7 +3,7 @@ package com.example.toplist;
 public class EditList {
 
     private void AddItem() {
-
+        list.add("");
 
     }
 

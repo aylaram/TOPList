@@ -7,8 +7,12 @@ public class AllList {
     ArrayList<Object> Lists=new ArrayList<>();
 
     private void AddList() {
-        List Li=new List();
+        int i=1;
+
+        List Li=new List(i);
         Lists.add(Li);
+
+        i++;
     }
 
     private void PrintLists() {

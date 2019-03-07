@@ -3,14 +3,14 @@ package com.example.toplist;
 import java.util.*;
 
 public class List {
-
-    ArrayList<String> List=new ArrayList<>();
-
+    private String name;
     private Date Dat;
 
-    List() {
+    List(id) {
         Dat=new Date();
+        name="List Nº "+id;
     }
 
+    ArrayList<String> List=new ArrayList<>();
 
 }
