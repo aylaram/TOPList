@@ -3,7 +3,7 @@ package com.example.toplist;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class items extends AppCompatActivity {
+public class Items extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
