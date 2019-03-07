@@ -53,4 +53,37 @@
         app:layout_constraintVertical_bias="0.011"
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
+    <ImageButton
+        android:id="@+id/addQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <ImageButton
+        android:id="@+id/lessQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_add"
+        tools:layout_editor_absoluteX="329dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/counter2"
+        android:layout_width="22dp"
+        android:layout_height="32dp"
+        android:text="0"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="296dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <Button
+        android:id="@+id/addItemB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="533dp" />
+
 </android.support.constraint.ConstraintLayout>

@@ -2,23 +2,38 @@ package com.example.toplist;
 
 import java.util.*;
 
-public class List {
+public class ShoppingList {
     private String name;
     private Date dat;
-
-    List(id) {
-        this.dat=new Date();
-        this.name="List Nº "+id;
-    }
-
-    ArrayList<String> List=new ArrayList<>();
+    private List<Items> items;
 
     public String getName() {
         return name;
     }
 
-    public Date getDate() {
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getDat() {
         return dat;
     }
 
+    public void setDat(Date dat) {
+        this.dat = dat;
+    }
+
+    public List<Items> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Items> items) {
+        this.items = items;
+    }
+
+    public ShoppingList(String name, Date dat, List<Items> items) {
+        this.name = name;
+        this.dat = dat;
+        this.items = items;
+    }
 }

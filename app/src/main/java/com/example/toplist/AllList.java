@@ -5,22 +5,17 @@ import java.util.*;
 
 public class AllList {
 
-    List<List<Items>> all = new ArrayList<>();
+    List<ShoppingList> all;
 
-    private void AddList(View newList) {
-        int i=1;
-
-        List Li=new List(i);
-        Lists.add(Li);
-
-        i++;
+    public List<ShoppingList> getAll() {
+        return all;
     }
 
-    private void PrintLists() {
-/*
-        for () {
-            System.out.println();
-        }
-*/
+    public AllList() {
+        all = new ArrayList<>();
+    }
+
+    public AllList(List<ShoppingList> all) {
+        this.all = all;
     }
 }
