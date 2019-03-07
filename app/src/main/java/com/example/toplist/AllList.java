@@ -5,7 +5,7 @@ import java.util.*;
 
 public class AllList {
 
-    ArrayList<Object> Lists=new ArrayList<>();
+    List<List<Items>> all = new ArrayList<>();
 
     private void AddList(View newList) {
         int i=1;

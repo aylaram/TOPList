@@ -2,18 +2,32 @@ package com.example.toplist;
 
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class EditList {
 
-    private void AddItem(String item) {
-        list.add(item);
+    private String item;
+    private int count;
+
+    public EditList(String item, int count) {
+        this.item = item;
+        this.count = count;
     }
 
-    private void SetItem(String item, int cuant) {
-        
+    public String getItem() {
+        return item;
     }
 
-    private void DeleteItem(String item) {
+    public void setItem(String item) {
+        this.item = item;
+    }
 
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }
