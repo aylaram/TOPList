@@ -30,6 +30,10 @@ public class Date {
         return Dat[1];
     }
 
+    public int getYear() {
+        return Dat[2];
+    }
+
     //Method for showing the Date
     public void showDate(String cad) {
         System.out.println(cad+": "+Dat[0]+"/"+Dat[1]+"/"+Dat[2]);

@@ -1,19 +1,19 @@
 package com.example.toplist;
 
+import android.view.View;
+import android.widget.ArrayAdapter;
+
 public class EditList {
 
-    private void AddItem() {
-        list.add("");
+    private void AddItem(String item) {
+        list.add(item);
+    }
+
+    private void SetItem(String item, int cuant) {
 
     }
 
-    private void SetItem() {
-
-
-    }
-
-    private void DeleteItem() {
-
+    private void DeleteItem(String item) {
 
     }
 }

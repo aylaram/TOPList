@@ -1,5 +1,7 @@
 package com.example.toplist;
 
+import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +14,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    int counterOC;
+    final static String PREF = "history";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         AllList ALi=new AllList();
+
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -33,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Log.d("onCreate","Done");
+
+        SharedPreferences prefGet = getSharedPreferences(PREF, Activity.MODE_PRIVATE);
+        counterOC = prefGet.getInt("LT", 0);
+
+        updateUI(counterOC, "???");
     }
 
     @Override
@@ -83,5 +93,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void updateUI(int counter, String id) {
+        TextView TVonCreate = findViewById(R.id.id);
+        TVonCreate.setText(Integer.toString(counter));
     }
 }
