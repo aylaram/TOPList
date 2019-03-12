@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".List_edit"></activity>
-        <activity android:name=".lists" />
-        <activity android:name=".items" />
+        <activity android:name=".ListContent"
+            android:parentActivityName=".Lists"></activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".NewList"
+            android:parentActivityName=".Lists" />
+        <activity
+            android:name=".Lists"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Items"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
